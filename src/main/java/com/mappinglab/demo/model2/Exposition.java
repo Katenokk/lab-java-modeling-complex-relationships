@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 @Entity
 @Table(name = "exposition")
+@DiscriminatorValue(value="Exposition")
 public class Exposition extends Event {
 
 

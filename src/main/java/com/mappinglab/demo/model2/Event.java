@@ -9,6 +9,7 @@ import java.util.List;
 @Entity
 @Table(name="event")
 @Inheritance(strategy= InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="event_type")
 public class Event {
 
     @Id
